@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JoinAsActivity"
+    android:background="@drawable/background2"
+    app:barrierMargin="15dp"
+    app:barrierDirection="start">
+  <TextView
+      android:id="@+id/et_join_as"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      android:layout_marginTop="100dp"
+      android:text="Join As"
+      android:textStyle="bold"
+      android:fontFamily="monospace"
+      android:textSize="30dp"
+      android:textColor="@color/blue_green"/>
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/cl_individual"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/et_join_as"
+      android:layout_marginTop="100dp"
+      android:layout_marginStart="40dp"
+      android:layout_marginEnd="40dp"
+      app:layout_constraintEnd_toStartOf="parent"
+      >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ll_individual"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/round_corner"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toEndOf="@id/image_individual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingStart="40dp"
+
+        >
+      <TextView
+          android:id="@+id/et_i1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Individual"
+          android:textColor="@color/blue_green"
+          android:textSize="20sp"
+          android:layout_marginStart="30dp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          />
+      <TextView
+          android:id="@+id/et_i2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/blue_green"
+          android:text="worlds largest professional network"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/et_i1"
+          android:layout_marginStart="30dp"
+          android:textSize="12sp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/image_individual"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="@id/ll_individual"
+        android:src="@drawable/img_individual"/>
+
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/cl_professional"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/cl_individual"
+      android:layout_marginTop="25dp"
+      android:layout_marginStart="40dp"
+      android:layout_marginEnd="40dp"
+      app:layout_constraintEnd_toStartOf="parent"
+      >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ll_professional"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/round_corner"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toEndOf="@id/image_professional"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingStart="40dp"
+
+        >
+      <TextView
+          android:id="@+id/et_p1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Professional"
+          android:textColor="@color/blue_green"
+          android:textSize="20sp"
+          android:layout_marginStart="30dp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          />
+      <TextView
+          android:id="@+id/et_p2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/blue_green"
+          android:text="worlds largest professional network"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/et_p1"
+          android:layout_marginStart="30dp"
+          android:textSize="12sp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/image_professional"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="@id/ll_professional"
+        android:src="@drawable/img_professional"/>
+
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/cl_merchant"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/cl_professional"
+      android:layout_marginTop="25dp"
+      android:layout_marginStart="40dp"
+      android:layout_marginEnd="40dp"
+      >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ll_merchant"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/round_corner"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toEndOf="@id/image_merchant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingStart="40dp"
+
+        >
+      <TextView
+          android:id="@+id/et_m1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Individual"
+          android:textColor="@color/blue_green"
+          android:textSize="20sp"
+          android:layout_marginStart="30dp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          />
+      <TextView
+          android:id="@+id/et_m2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/blue_green"
+          android:text="worlds largest professional network"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/et_m1"
+          android:layout_marginStart="30dp"
+          android:textSize="12sp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/image_merchant"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="@id/ll_merchant"
+        android:src="@drawable/img_mercgant"/>
+
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
